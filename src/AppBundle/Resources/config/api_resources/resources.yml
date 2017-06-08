@@ -1,0 +1,12 @@
+resources:
+    Domain\PostalAddress\PostalAddress:
+        collectionOperations:
+            get:
+                method: 'GET'
+            post:
+                route_name: 'postalAddress_create'
+        itemOperations:
+            get:
+                method: 'GET'
+    #        special:
+    #            route_name: 'book_special'

@@ -1,0 +1,24 @@
+Domain\PostalAddress\PostalAddress:
+    properties:
+        id:
+            - NotBlank: ~
+        streetAddress:
+            - NotBlank: ~
+            - Length:
+                max: 255
+                maxMessage: 'Your street address cannot be longer than {{ limit }} characters'
+        postalCode:
+            - NotBlank: ~
+            - Length:
+                max: 255
+                maxMessage: 'Your postal code cannot be longer than {{ limit }} characters'
+        addressLocality:
+            - NotBlank: ~
+            - Length:
+                max: 255
+                maxMessage: 'Your address locality cannot be longer than {{ limit }} characters'
+        addressCountry:
+            - NotBlank: ~
+            - Length:
+                max: 255
+                maxMessage: 'Your address country cannot be longer than {{ limit }} characters'

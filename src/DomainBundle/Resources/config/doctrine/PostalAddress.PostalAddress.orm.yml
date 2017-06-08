@@ -1,0 +1,19 @@
+Domain\PostalAddress\PostalAddress:
+    type: entity
+    table: postalAddress
+    id:
+        id:
+            type: string
+    fields:
+        streetAddress:
+            type: string
+            length: 255
+        postalCode:
+            type: string
+            scale: 10
+        addressLocality:
+            type: string
+            length: 255
+        addressCountry:
+            type: string
+            length: 50
